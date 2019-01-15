@@ -40,7 +40,7 @@
          $('.cart table').on('click', '.pos .del', function () {
              var curRow = $(this).parents('.pos');
              var existTotal = curRow.find('.summ span').text();
-             globalTotal = globalTotal - Number(existTotal);
+             globalTotal = Math.abs(globalTotal - Number(existTotal));
              curRow.remove();
              dataUpd();
          });
