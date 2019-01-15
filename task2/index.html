@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="./favicon.png">
+<link href="./style.css" type="text/css" rel="stylesheet">
+<script src="./jquery.js"></script>
+<script src="./scripts.js"></script>
+<main id="main">
+    <div class="cart">
+        <button class="toggle"><svg><use xlink:href="#cart-ico"/></svg></button>
+        <span class="total">На&nbsp;сумму:&nbsp;<strong class="carttotal">0</strong>&nbsp;р.</span>
+        <table>
+            <tbody>
+                <tr>
+                    <th class="pic"></th>
+                    <th>Наименование</th>
+                    <th>Артикул</th>
+                    <th>Цена</th>
+                    <th>Кол-во</th>
+                    <th>Стоимость</th>
+                    <th></th>
+                </tr>
+                
+                <tr class="empty">
+                    <td colspan="7">В корзине пока ничего нет</td>
+                </tr>
+                <tr class="totalsumm">
+                    <td colspan="5">Итого:</td><td colspan="2" class="summbox"><span>0</span> р. <a class="tobuy" href="#">К оформлению >></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h1>Каталог</h1>
+    <div class="catalog">
+        <div class="cat-item">
+            <a href="#" class="title">Товар N1</a>
+            <div class="art">678990</div>
+            <a href="#" class="imgbox">
+                <img src="./img/good1.jpg" alt="Товар N1">
+            </a>
+            <div class="price"><span>14623.32</span> p.</div>
+            <div class="quant"><input min="1" type="number" value="1"></div>
+            <button data-buy>Купить</button>
+        </div>
+        <div class="cat-item">
+            <a href="#" class="title">Товар N2</a>
+            <div class="art">667781</div>
+            <a href="#" class="imgbox">
+                <img src="./img/good2.jpg" alt="Товар N2">
+            </a>
+            <div class="price"><span>37990.00</span> p.</div>
+            <div class="quant"><input min="1" type="number" value="1"></div>
+            <button data-buy>Купить</button>
+        </div>
+        <div class="cat-item">
+            <a href="#" class="title">Товар N3</a>
+            <div class="art">458050</div>
+            <a href="#" class="imgbox">
+                <img src="./img/good3.jpg" alt="Товар N3">
+            </a>
+            <div class="price"><span>56789.89</span> p.</div>
+            <div class="quant"><input min="1" type="number" value="1"></div>
+            <button data-buy>Купить</button>
+        </div>
+    </div>
+</main>
+<svg>
+    <defs>
+        <symbol id="cart-ico" viewBox="0 0 510 510">
+        <path d="M153,408c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S181.05,408,153,408z M0,0v51h51l91.8,193.8L107.1,306    c-2.55,7.65-5.1,17.85-5.1,25.5c0,28.05,22.95,51,51,51h306v-51H163.2c-2.55,0-5.1-2.55-5.1-5.1v-2.551l22.95-43.35h188.7    c20.4,0,35.7-10.2,43.35-25.5L504.9,89.25c5.1-5.1,5.1-7.65,5.1-12.75c0-15.3-10.2-25.5-25.5-25.5H107.1L84.15,0H0z M408,408    c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S436.05,408,408,408z"/>
+        </symbol>
+    </defs>
+</svg>
+
+</html>
